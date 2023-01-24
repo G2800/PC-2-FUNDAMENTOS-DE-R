@@ -1,1 +1,34 @@
-
+Utilice la siguiente base de datos del MINSA:
+Casos positivos por COVID-19
+Se desea analizar la evolución del número de casos de COVID-19 en los departamentos de
+Amazonas, Apurímac, Ayacucho, Huancavelica, Pasco y Tacna.
+A) Se le solicita que realice un gráfico de línea dinámico (10 PTOS). Incluya las siguientes
+precisiones:
+• Cree la variable n_meses para indicar el número de mes desde el inicio de la pandemia.
+Esto quiere decir que marzo del 2020 es el mes 1, abril del 2020 es el mes 2, etc. Para
+construir esta la variable puede utilizar como insumo las funciones lubridate::year() y
+lubridate::month() u otras funciones similares sobre la variable FECHA_RESULTADO.
+• Muestre la evolución del número total de casos positivos (llame a esta variable
+“casos_mes”) detectados en los departamentos elegidos según mes. No es el
+acumulado, es el total en el mes.
+• Sólo presente la información del mes 1 al 21.
+• Presente el gráfico con animación, realice la transición según el número de mes
+(paquete gganimate).
+• Analice y comente brevemente el gráfico.
+• Guarde el GIF como “gif_p1A”
+B) Ahora, tomando de insumo la pregunta anterior, realice los siguientes cambios al GIF
+creado (5 puntos):
+• En lugar de las frecuencias de casos por mes para cada departamento utilice la media
+móvil (3 meses). Puede utilizar la función zoo::rollmean() u otra similar, de tal manera
+que aparezca el valor del mes 21 en esta nueva variable.
+• Cree la variable “Macroregion”. Divida el gráfico de acuerdo a pertenencia a
+macroregiones (Amazonas en “Selva”; Apurímac y Tacna en “Sur”; Ayacucho,
+Huancavelica y Pasco en “Centro”)
+• ¿Qué diferencias considera que tiene respecto al gráfico de la pregunta 1A? Analice y
+comente.
+• Guarde el gif como “gif_p1B”
+PREGUNTA 2
+Descargue la data de LAPOP 2021 para el Perú:
+LAPOP (escribir “Perú” en el buscador).
+Realice lo siguiente (5ptos):
+• Realice un subset seleccionando las siguientes variables. Llámelo “sublapop”
